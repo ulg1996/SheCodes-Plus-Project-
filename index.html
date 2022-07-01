@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather app</title>
     <link rel="stylesheet" href="src/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/e5976ddd14.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -20,13 +22,47 @@
   </head>
   <body>
     <div class="container">
-      <h1>Weather app</h1>
-    </div>
-    <div class="github-link">
-      <a href="https://github.com/ulg1996/SheCodes-Plus-Project-"
-        >Open-source code</a
-      >
-      by Ursula Goddard
+      <div class="weather-app">
+        <h1>Current weather in <span id="city">Düsseldorf</span></h1>
+        <h2>Friday 10:15</h2>
+       <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Cloudy" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong
+                  ><span class="units">24 °C | °F</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li><span id="description">Cloudy</span></li>
+                <li>Humidity: <span id="humidity">60</span>%</li>
+                <li>Wind: <span id="wind">20</span> km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="form"><form class="search-form" id="search-form">
+          <input
+            type="text"
+            id="city-input"
+            placeholder="Enter city here"
+            autocomplete="on"
+            autofocus="on"
+          />
+          <input type="submit" class="search-button shadow-sm" value="Go" />
+           <button
+                class="current-location-button"
+                id = "current-location-button"
+              >Current location
+              </button>
+        </form></div>
+      <div class="github-link">
+        <small><a href="https://github.com/ulg1996/SheCodes-Plus-Project-" target="_blank">Open-source code</a
+        >
+        by Ursula Goddard</small>
+      </div>
     </div>
     <script src="src/index.js"></script>
   </body>
