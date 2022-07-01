@@ -1,5 +1,42 @@
-h1 {
+.weather-app {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ffe3e3;
+  border-radius: 10px;
   font-family: "Poppins";
+}
+
+h1 {
+  color: #93b5c6;
+  text-align: center;
+}
+
+h2 {
+  color: #c9ccd5;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.weather-temperature img {
+  margin-right: 10px;
+}
+.temperature {
+  color: #9cb4cc;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.units {
+  color: #9cb4cc;
+  position: relative;
+  font-size: 16px;
+  top: -36px;
+}
+
+li {
+  list-style: none;
+  color: #9cb4cc;
 }
 
 .github-link {
