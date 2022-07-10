@@ -88,6 +88,8 @@ function convertToFahrenheit(event) {
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
+// current location button functionality
+
 function searchLocation(position) {
   let apiKey = `b95f179627c8dd37f41e1be6e3250e19`;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=${apiKey}&units=metric`;
@@ -99,6 +101,8 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
+
+//
 
 let celsiusTemperature = null;
 
