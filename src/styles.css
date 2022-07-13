@@ -2,18 +2,18 @@
   max-width: 600px;
   margin: 10px auto;
   padding: 20px;
-  border: 1px solid #ffe3e3;
+  border: 7px solid #fff9b0;
   border-radius: 10px;
   font-family: "Poppins";
 }
 
 h1 {
-  color: #93b5c6;
+  color: #ffab73;
   text-align: center;
 }
 
 h2 {
-  color: #c9ccd5;
+  color: #ffab73;
   text-align: center;
   margin: 10px 0;
 }
@@ -22,7 +22,7 @@ h2 {
   margin-right: 10px;
 }
 .temperature {
-  color: #9cb4cc;
+  color: #ffaec0;
   font-size: 64px;
   line-height: 1;
   float: left;
@@ -34,7 +34,7 @@ h2 {
 
 li {
   list-style: none;
-  color: #9cb4cc;
+  color: #ffaec0;
   text-transform: capitalize;
 }
 
@@ -45,17 +45,17 @@ li {
 
 .search-button {
   border-radius: 30px;
-  border: 3px solid #ffe3e3;
+  border: 3px solid #ffd384;
   background-color: white;
-  color: #ffe3e3;
+  color: #ffd384;
   padding: 0 10px;
 }
 
 .current-location-button {
   border-radius: 30px;
-  border: 3px solid #ffe3e3;
+  border: 3px solid #ffd384;
   background-color: white;
-  color: #ffe3e3;
+  color: #ffd384;
   padding: 0 10px;
 }
 
